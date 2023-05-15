@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular';
+ title = 'Registration form';
+
+ displayname='';
+ displayrollno='';
+ displaybranch='';
+ displayyear='';
+
+ getValue(name:string,rollno:string, branch:string, year:string){
+  this.displayname=name;
+  this.displayrollno=rollno;
+  this.displaybranch=branch;
+  this.displayyear=year;
+ }
 }
